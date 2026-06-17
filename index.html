@@ -57,13 +57,14 @@
   .skyline{position:absolute;bottom:48px;left:0;right:0;height:120px;opacity:.5;
     background:linear-gradient(180deg, transparent, rgba(201,151,45,.0));
   }
-  .logo-pap{
-    position:relative;display:inline-block;margin-bottom:14px;
-    border:1px solid rgba(230,187,86,.5);border-radius:999px;
-    padding:8px 18px;font-size:13px;letter-spacing:.18em;color:#f0e2c4;
-    background:rgba(0,0,0,.18);
+  .logo-plate{
+    position:relative;display:inline-flex;align-items:center;gap:8px;margin-bottom:6px;
+    background:#fff;border-radius:14px;padding:9px 16px;
+    box-shadow:0 6px 20px rgba(0,0,0,.28);
   }
-  .logo-pap b{font-weight:700;color:#fff}
+  .logo-plate img{height:42px;width:auto;display:block}
+  .logo-kicker{position:relative;display:block;font-size:12px;letter-spacing:.14em;
+    color:#d8cba9;margin-bottom:14px;margin-top:8px}
   .brand{position:relative;font-family:'Frank Ruhl Libre',serif;font-weight:900;
     font-size:clamp(46px,11vw,84px);line-height:1;
     background:linear-gradient(180deg,#f6e7c0,#e6bb56 55%,#c8972d);
@@ -166,11 +167,10 @@
   <!-- ===================== HERO ===================== -->
   <header class="hero">
     <div class="stars"></div>
-    <!-- כאן ממקמים את לוגו פנים אל פנים (החליפו את הטקסט בתמונת הלוגו) -->
-    <div class="logo-pap">מבית <b>פנים אל פנים</b></div>
+    <div class="logo-plate"><img src="logo-panim.png" alt="פנים אל פנים"></div>
+    <span class="logo-kicker">מבית פנים אל פנים</span>
 
     <div class="brand">ירושמימה</div>
-    <div class="brand-sub">ב ר א ש ו ת   ה ר ב   ג ד י   ש ל ו י ן</div>
 
     <div class="hero-tag">
       <div class="small">מחברים את ירושלים של מטה</div>
