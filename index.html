@@ -139,6 +139,29 @@
     font-weight:600;color:var(--night);box-shadow:0 4px 12px rgba(120,90,30,.08);font-size:15px}
   .chip span{color:var(--gold-deep)}
 
+  /* highlight card (certificate) */
+  .card.gold{background:linear-gradient(135deg,#fff8e9,#fdeecb);border-color:var(--gold)}
+  .card.gold .ic{background:linear-gradient(135deg,#1d2f54,#0e1b33)}
+
+  /* "for you if" section */
+  .foryou{background:var(--stone-light);border-top:3px solid rgba(201,151,45,.3);border-bottom:3px solid rgba(201,151,45,.3)}
+  .checks{max-width:560px;margin:0 auto;display:grid;gap:12px}
+  .checks .row{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid #e7d9ba;
+    border-radius:14px;padding:16px 18px;box-shadow:0 5px 14px rgba(120,90,30,.07)}
+  .checks .v{flex:none;width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--gold-light),var(--gold));
+    color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700}
+  .checks .row p{color:var(--ink-soft);font-size:clamp(15px,4vw,17px);padding-top:3px}
+  .checks .row b{color:var(--night)}
+
+  /* FAQ */
+  .faq-list{max-width:600px;margin:0 auto;display:grid;gap:14px}
+  .qa{background:#fff;border:1px solid #e7d9ba;border-right:4px solid var(--gold);border-radius:14px;
+    padding:18px 20px;box-shadow:0 5px 14px rgba(120,90,30,.07)}
+  .qa .q{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--night);font-size:clamp(17px,4.4vw,20px);margin-bottom:6px}
+  .qa .q::before{content:"שאלה · ";color:var(--gold-deep);font-family:'Heebo';font-weight:700;font-size:13px;letter-spacing:.06em}
+  .qa .a{color:var(--ink-soft);font-size:clamp(15px,3.9vw,16.5px)}
+  .qa .a a{color:var(--gold-deep);font-weight:700;text-decoration:none;border-bottom:1px solid var(--gold-light)}
+
   /* final CTA */
   .final{background:
       linear-gradient(180deg, rgba(14,27,51,.92), rgba(14,27,51,.92)),
@@ -216,6 +239,23 @@
         <h3>כלים מעשיים</h3>
         <p>כלים מעשיים להדרכת קבוצות מגוונות ברוח העיר, מהשטח ולשטח.</p>
       </div>
+      <div class="card gold">
+        <div class="ic">🏅</div>
+        <h3>תעודה ותו תקן</h3>
+        <p>בסיום הקורס — תעודת מדריך ותו תקן של ירושמימה, שפותחים לך דלת לעולם ההדרכה.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOR YOU IF ===================== -->
+  <section class="foryou">
+    <span class="eyebrow">אז מה אתה מחפש?</span>
+    <h2 class="sec-title">הקורס הזה בשבילך אם…</h2>
+    <div class="rule"></div>
+    <div class="checks">
+      <div class="row"><div class="v">✓</div><p>אתה רוצה להפוך את אהבת ירושלים ל<b>ניסיון אמיתי בהדרכה</b>.</p></div>
+      <div class="row"><div class="v">✓</div><p>אתה מחפש <b>תעודת מדריך ותו תקן של ירושמימה</b> שמכובדים ומוכרים.</p></div>
+      <div class="row"><div class="v">✓</div><p>אתה רואה את עצמך <b>מדריך קבוצות</b> ומחבר אנשים לנקודת הקודש בירושלים.</p></div>
     </div>
   </section>
 
@@ -245,6 +285,23 @@
       <span class="chip">🌿 <span>הר הזיתים</span></span>
       <span class="chip">🎓 <span>ביה״ס הריאלי, חיפה</span></span>
       <span class="chip">👥 <span>קבוצות מכל הגוונים</span></span>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section>
+    <span class="eyebrow">שאלות נפוצות</span>
+    <h2 class="sec-title">שתי שאלות לפני שיוצאים לדרך</h2>
+    <div class="rule"></div>
+    <div class="faq-list">
+      <div class="qa">
+        <div class="q">אני יכול להתחיל בכ׳ בתמוז?</div>
+        <div class="a">הקורס נפתח ב־כ׳ בתמוז ורץ עד ז׳ באב, 4 ימים בשבוע בשעות אחה״צ. אם אתה פנוי למתכונת הזו — זה הזמן להצטרף. לא בטוח לגבי התאריכים? <a class="wa-link" href="#">כתוב לציון ונבדוק יחד</a>.</div>
+      </div>
+      <div class="qa">
+        <div class="q">כמה מפגשים יש בקורס?</div>
+        <div class="a">הקורס מרוכז על פני התקופה — 4 מפגשים בשבוע בשעות אחה״צ. למערכת המלאה ולכל הפרטים <a class="wa-link" href="#">שלח הודעה לציון</a> ונשלח לך הכול.</div>
+      </div>
     </div>
   </section>
 
