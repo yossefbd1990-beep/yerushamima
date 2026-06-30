@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>סיורי סליחות · ירושמימה מבית פנים אל פנים</title>
+<meta property="og:title" content="סיורי סליחות · ירושמימה">
+<meta property="og:description" content="סיורי סליחות בסמטאות ירושלים — מבט אמוני ותורני עמוק, עם מדריכים תלמידי חכמים. לישיבות, אולפנות, נוער וצוותים.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#0c0907;
+    --night-2:#15100a;
+    --panel:#1d150d;
+    --panel-2:#241a10;
+    --amber:#d99a3c;
+    --amber-light:#f0c277;
+    --amber-deep:#a86f22;
+    --copper:#c97b3a;
+    --sand:#ece1ca;
+    --sand-dim:#bcab8c;
+    --ink:#efe6d4;
+    --wa:#25d366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Heebo',sans-serif;color:var(--ink);background:var(--night);line-height:1.65;overflow-x:hidden}
+  .wrap{max-width:780px;margin:0 auto;background:var(--night);box-shadow:0 0 80px rgba(0,0,0,.6)}
+  h1,h2,h3,.serif{font-family:'Frank Ruhl Libre',serif}
+
+  /* ===== HERO — סמטת לילה ===== */
+  .hero{position:relative;text-align:center;padding:28px 26px 64px;color:#fff;overflow:hidden;
+    background:
+      radial-gradient(70% 50% at 50% 78%, rgba(217,154,60,.22), transparent 70%),
+      radial-gradient(95% 65% at 50% 6%, rgba(217,154,60,.30), rgba(20,14,8,0) 60%),
+      linear-gradient(180deg,#1a130b 0%, #0f0b07 55%, #0c0907 100%);
+  }
+  .hero::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+    background:
+      radial-gradient(1.5px 1.5px at 22% 18%, rgba(255,235,200,.5), transparent),
+      radial-gradient(1.3px 1.3px at 68% 12%, rgba(255,235,200,.4), transparent),
+      radial-gradient(1.6px 1.6px at 80% 26%, rgba(255,235,200,.35), transparent),
+      radial-gradient(1.3px 1.3px at 12% 33%, rgba(255,235,200,.4), transparent)}
+  /* קרן אור מנורה */
+  .hero::after{content:"";position:absolute;left:50%;top:-8%;transform:translateX(-50%);
+    width:60%;height:70%;pointer-events:none;
+    background:radial-gradient(50% 60% at 50% 0%, rgba(240,194,119,.22), transparent 70%);filter:blur(6px)}
+
+  .logo-plate{position:relative;display:inline-flex;align-items:center;background:#fff;border-radius:13px;
+    padding:8px 15px;box-shadow:0 6px 22px rgba(0,0,0,.5);margin-bottom:8px}
+  .logo-plate img{height:38px;width:auto;display:block}
+  .logo-kicker{position:relative;display:block;font-size:12px;letter-spacing:.14em;color:var(--sand-dim);margin-top:7px}
+
+  .title{position:relative;font-family:'Suez One',serif;font-weight:400;
+    font-size:clamp(54px,16vw,120px);line-height:.92;color:#fbf3e2;margin-top:14px;
+    text-shadow:0 2px 24px rgba(240,194,119,.45), 0 6px 50px rgba(217,154,60,.3);letter-spacing:.01em}
+  .title .l2{display:block;color:#f3e8d2}
+  .badge{position:relative;display:inline-block;margin-top:18px;
+    background:linear-gradient(90deg,var(--copper),var(--amber),var(--copper));color:#1c120a;
+    font-weight:700;font-size:clamp(15px,3.8vw,18px);padding:9px 24px;border-radius:7px;
+    box-shadow:0 8px 26px rgba(0,0,0,.4)}
+  .invite{position:relative;margin-top:24px;font-size:clamp(15px,3.8vw,18px);color:var(--sand);letter-spacing:.02em}
+  .invite b{color:var(--amber-light);font-weight:700}
+
+  /* CTA */
+  .btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;
+    font-weight:700;font-size:clamp(17px,4.4vw,20px);padding:15px 32px;border-radius:999px;
+    box-shadow:0 10px 30px rgba(37,211,102,.4);transition:transform .15s, box-shadow .15s;margin-top:26px}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(37,211,102,.5)}
+  .btn-wa svg{width:24px;height:24px;fill:#fff;flex:none}
+  .btn-note{display:block;margin-top:11px;font-size:13px;color:var(--sand-dim);position:relative}
+
+  /* ===== sections ===== */
+  section{padding:52px 30px;position:relative}
+  .eyebrow{display:block;text-align:center;color:var(--amber);font-weight:700;letter-spacing:.24em;font-size:13px;margin-bottom:12px}
+  .sec-title{text-align:center;font-weight:900;font-size:clamp(27px,6.6vw,40px);color:#fbf2e0;line-height:1.18}
+  .sec-title em{font-style:normal;color:var(--amber-light)}
+  .rule{width:60px;height:3px;margin:16px auto 0;border-radius:3px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}
+  .dots{text-align:center;color:var(--amber);letter-spacing:.5em;font-size:20px;margin:6px 0}
+
+  /* story */
+  .story{background:
+      radial-gradient(80% 60% at 80% 0%, rgba(201,123,58,.16), transparent 60%),
+      linear-gradient(180deg,#0c0907, #140e08)}
+  .story .body{max-width:600px;margin:26px auto 0}
+  .story p{font-size:clamp(17px,4.4vw,21px);color:#e3d7bf;margin-bottom:18px;text-align:center}
+  .story p .hl{color:var(--amber-light);font-weight:700}
+  .story .kick{font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:clamp(19px,5vw,24px);color:#fff}
+  .story .close{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--amber-light);
+    font-size:clamp(20px,5.2vw,26px);line-height:1.4}
+
+  /* what */
+  .what{background:var(--night)}
+  .what .lead{max-width:600px;margin:0 auto;text-align:center}
+  .what .name{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--amber-light);
+    font-size:clamp(20px,5vw,26px);margin-bottom:14px}
+  .what p{color:#ddd0b6;font-size:clamp(16px,4.1vw,19px)}
+  .what .invite-pill{display:inline-block;margin-top:18px;background:rgba(217,154,60,.14);
+    border:1px solid rgba(240,194,119,.35);border-radius:999px;padding:8px 20px;color:var(--amber-light);font-weight:600;font-size:15px}
+
+  /* features */
+  .feat{background:linear-gradient(180deg,#140e08,#0d0a07)}
+  .cards{display:grid;gap:14px;max-width:640px;margin:0 auto}
+  .card{background:linear-gradient(135deg,rgba(217,154,60,.10),rgba(28,20,12,.6));
+    border:1px solid rgba(217,154,60,.28);border-radius:16px;padding:20px 20px 20px 60px;position:relative}
+  .card .ic{position:absolute;top:18px;right:18px;width:40px;height:40px;border-radius:11px;
+    background:linear-gradient(135deg,var(--amber-light),var(--amber-deep));display:flex;align-items:center;justify-content:center;font-size:20px}
+  .card h3{font-size:clamp(18px,4.6vw,21px);color:#fbf2e0;margin-bottom:3px;padding-right:54px}
+  .card p{color:var(--sand-dim);font-size:15.5px;padding-right:54px}
+
+  /* audience */
+  .aud{background:var(--night);text-align:center}
+  .chips{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;max-width:600px;margin:24px auto 0}
+  .chip{background:rgba(217,154,60,.10);border:1px solid rgba(240,194,119,.32);border-radius:999px;
+    padding:10px 22px;font-weight:600;color:#f0e6d0;font-size:15.5px}
+  .yearround{max-width:600px;margin:30px auto 0;background:rgba(201,123,58,.12);
+    border-right:4px solid var(--amber);border-radius:12px;padding:18px 22px;text-align:right}
+  .yearround b{color:var(--amber-light)}
+
+  /* proof */
+  .proof{background:linear-gradient(180deg,#0d0a07,#140e08);text-align:center}
+  .proof .chips .chip{background:#fff;color:#1c140a;border:none}
+  .proof .chips .chip span{color:var(--amber-deep)}
+  .gefen{margin-top:22px;color:var(--sand-dim);font-size:14.5px}
+  .gefen b{color:var(--amber-light)}
+
+  /* final */
+  .final{text-align:center;background:
+      radial-gradient(70% 60% at 50% 0%, rgba(217,154,60,.26), transparent 65%),
+      linear-gradient(180deg,#1a130b,#0c0907)}
+  .final h2{font-size:clamp(28px,7vw,42px);color:#fff;margin-bottom:8px}
+  .final h2 em{font-style:normal;color:var(--amber-light)}
+  .final p{color:var(--sand);max-width:520px;margin:0 auto;font-size:clamp(16px,4vw,18px)}
+  .phone{margin-top:22px;font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:clamp(20px,5vw,26px);color:#fff}
+  .phone b{color:var(--amber-light);direction:ltr;unicode-bidi:embed}
+  .final .small{margin-top:10px;font-size:13.5px;color:var(--sand-dim)}
+
+  footer{background:#0a0705;color:#8c7d63;text-align:center;padding:24px;font-size:13px;letter-spacing:.04em}
+  footer .fbrand{font-family:'Suez One',serif;color:var(--amber-light);font-size:20px}
+
+  .float{position:fixed;bottom:18px;left:18px;z-index:50}
+  .float a{display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;
+    padding:13px 22px;border-radius:999px;box-shadow:0 8px 26px rgba(37,211,102,.5);font-size:16px}
+  .float svg{width:22px;height:22px;fill:#fff}
+  @media(max-width:520px){.float a span{display:none}.float a{padding:15px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="logo-plate"><img src="logo-panim.png" alt="פנים אל פנים"></div>
+    <span class="logo-kicker">מבית פנים אל פנים</span>
+
+    <h1 class="title">סיורי<span class="l2">סליחות</span></h1>
+    <div class="badge">מבית ירושמימה · בראשות הרב גדי שלוין</div>
+
+    <p class="invite">הזמנה ל<b>ישיבות · אולפנות · תנועות נוער · צוותים</b><br>לחוות את ירושלים כמו שלא חוויתם.</p>
+
+    <a class="btn-wa wa-link" href="#">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
+      לתיאום סיור לקבוצה שלכם
+    </a>
+    <span class="btn-note">שיחה אישית בוואטסאפ עם ציון · ללא התחייבות</span>
+  </header>
+
+  <!-- ===================== STORY ===================== -->
+  <section class="story">
+    <span class="eyebrow">תארו לעצמכם</span>
+    <h2 class="sec-title">חצות, בסמטאות העיר העתיקה</h2>
+    <div class="rule"></div>
+    <div class="body">
+      <p>השעה מאוחרת. האבנים עוד חמות מחום היום, והסמטאות שקטות. קבוצה צועדת לאט בין החנויות הסגורות — ואור פנס בודד נופל על אבן בת אלפיים שנה.</p>
+      <p class="kick">המדריך — תלמיד חכם — עוצר. ומספר.</p>
+      <p>ופתאום הסמטה קמה לתחייה: כאן עלו לרגל, כאן התפללו דורות, כאן ההיסטוריה פוגשת את האמונה. <span class="hl">בין ירושלים של מטה לירושלים של מעלה</span> — משהו נפתח בלב.</p>
+      <p class="close">וכשמגיעים אל הסליחות —<br>כבר לא אומרים אותן מבחוץ.<br>אומרים אותן מבפנים.</p>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT ===================== -->
+  <section class="what">
+    <div class="lead">
+      <div class="name">ירושמימה — מדרשה לסיורים אמוניים בירושלים</div>
+      <p>אנחנו, מבית פנים אל פנים, מזמינים אתכם למסע בסמטאות ירושלים — בין קודש לחול, בין ירושלים של מטה לזו של מעלה. נפתח את הלב, ניגע בתוכן רוחני משמעותי, ונגיע אל ימי הרחמים והסליחות מתוך חיבור אמיתי.</p>
+      <span class="invite-pill">סיורי סליחות · מבט אמוני ותורני עמוק</span>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="feat">
+    <span class="eyebrow">חינוך מתוך חיבור</span>
+    <h2 class="sec-title">למה <em>איתנו</em> זה אחרת</h2>
+    <div class="rule"></div>
+    <div class="cards" style="margin-top:28px">
+      <div class="card">
+        <div class="ic">📖</div>
+        <h3>מדריכים תלמידי חכמים</h3>
+        <p>עומק תורני אמיתי — לא עוד סיור, אלא מסע עם אנשים שחיים את התוכן.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🎯</div>
+        <h3>הדרכה מותאמת</h3>
+        <p>לעולם המושגים של עולם התורה והחינוך הדתי — מדברים בשפה שלכם.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🌙</div>
+        <h3>בכל שעות היממה</h3>
+        <p>סיור סליחות גם בלב הלילה, כשירושלים שקטה והלב פתוח.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🏠</div>
+        <h3>אופציה לאירוח ושיח</h3>
+        <p>אפשר להמשיך את החוויה באירוח בבתים ובשיחה שנוגעת.</p>
+      </div>
+      <div class="card">
+        <div class="ic">✨</div>
+        <h3>חוויה שנשארת</h3>
+        <p>חוויה רוחנית ואמונית שממשיכה ללוות הרבה אחרי שהסיור נגמר.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AUDIENCE ===================== -->
+  <section class="aud">
+    <span class="eyebrow">מתאים במיוחד ל</span>
+    <h2 class="sec-title">קבוצות שרוצות יותר מסיור</h2>
+    <div class="rule"></div>
+    <div class="chips">
+      <span class="chip">ישיבות</span>
+      <span class="chip">אולפנות</span>
+      <span class="chip">תנועות נוער</span>
+      <span class="chip">צוותים</span>
+      <span class="chip">סמינרים</span>
+      <span class="chip">מדרשות</span>
+    </div>
+    <div class="yearround">
+      <b>ולא רק בסליחות.</b> ירושמימה מובילה סיורי זהות וחיבור עמוק לירושלים לאורך כל השנה — בכל מועד ולכל קבוצה.
+    </div>
+  </section>
+
+  <!-- ===================== PROOF ===================== -->
+  <section class="proof">
+    <span class="eyebrow">כבר בשטח</span>
+    <h2 class="sec-title">מדריכים בלב הקודש</h2>
+    <div class="rule"></div>
+    <div class="chips">
+      <span class="chip">🕍 <span>הכותל המערבי</span></span>
+      <span class="chip">🌿 <span>הר הזיתים</span></span>
+      <span class="chip">🎓 <span>מוסדות חינוך מובילים</span></span>
+    </div>
+    <p class="gefen">הסיורים <b>מוכרים בתכנית הגפן</b> · קוד 48281 (אדמה ושמים)</p>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="final">
+    <h2>משריינים מקום <em>עכשיו.</em></h2>
+    <p>בחרו תאריך, ותנו לקבוצה שלכם חוויה שלא ישכחו — בין סמטאות ירושלים אל לב הסליחות.</p>
+    <a class="btn-wa wa-link" href="#" style="margin-top:24px">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
+      שלחו הודעה לציון
+    </a>
+    <div class="phone">לתיאום סיור · ציון <b>055-663-9240</b></div>
+    <div class="small">להזמנה ישירה במערכת הגפן: 48281 · אדמה ושמים</div>
+  </section>
+
+  <footer>
+    <div class="fbrand">ירושמימה</div>
+    מבית פנים אל פנים · בראשות הרב גדי שלוין
+  </footer>
+</div>
+
+<div class="float">
+  <a class="wa-link" href="#">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
+    <span>דברו עם ציון</span>
+  </a>
+</div>
+
+<script>
+  var WA_NUMBER = "972556639240"; // 055-6639240
+  var WA_MSG = "שלום ציון, אשמח לקבל פרטים לגביי סיור סליחות בירושלים או סיורים נוספים.";
+  var href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_MSG);
+  document.querySelectorAll(".wa-link").forEach(function(a){ a.setAttribute("href", href); });
+</script>
+</body>
+</html>
