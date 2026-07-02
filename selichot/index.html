@@ -3,141 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>סיורי סליחות · ירושמימה מבית פנים אל פנים</title>
-<meta property="og:title" content="סיורי סליחות · ירושמימה">
-<meta property="og:description" content="סיורי סליחות בסמטאות ירושלים — מבט אמוני ותורני עמוק, עם מדריכים תלמידי חכמים. לישיבות, אולפנות, נוער וצוותים.">
+<title>סיורי הכנה לסליחות · ירושמימה מבית פנים אל פנים</title>
+<meta name="description" content="סיורי הכנה לסליחות בירושלים עם מדריכים תלמידי חכמים — 4 מסלולים. לישיבות, אולפנות, נוער וצוותים. ניתן לסיים באמירת סליחות בכותל.">
+<meta property="og:title" content="סיורי הכנה לסליחות · ירושמימה">
+<meta property="og:description" content="4 מסלולי סליחות בסמטאות ירושלים, מבט אמוני ותורני עמוק, עם מדריכים תלמידי חכמים.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --night:#0c0907;
-    --night-2:#15100a;
-    --panel:#1d150d;
-    --panel-2:#241a10;
-    --amber:#d99a3c;
-    --amber-light:#f0c277;
-    --amber-deep:#a86f22;
-    --copper:#c97b3a;
-    --sand:#ece1ca;
-    --sand-dim:#bcab8c;
-    --ink:#efe6d4;
-    --wa:#25d366;
+    --night:#0c0907; --night-2:#15100a; --panel:#1d150d; --panel-2:#241a10;
+    --amber:#d99a3c; --amber-light:#f2c67e; --amber-deep:#a86f22; --copper:#c97b3a;
+    --sand:#ece1ca; --sand-dim:#c3b393; --ink:#f2ead9; --wa:#25d366;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:'Heebo',sans-serif;color:var(--ink);background:var(--night);line-height:1.65;overflow-x:hidden}
-  .wrap{max-width:780px;margin:0 auto;background:var(--night);box-shadow:0 0 80px rgba(0,0,0,.6)}
+  .wrap{max-width:820px;margin:0 auto;background:var(--night);box-shadow:0 0 80px rgba(0,0,0,.6)}
   h1,h2,h3,.serif{font-family:'Frank Ruhl Libre',serif}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  a:focus-visible, .btn-wa:focus-visible{outline:3px solid var(--amber-light);outline-offset:3px;border-radius:8px}
+  @media (prefers-reduced-motion: reduce){*{transition:none !important;scroll-behavior:auto}}
+  .skip{position:absolute;right:-9999px;top:0;background:#fff;color:#111;padding:10px 16px;z-index:100;border-radius:0 0 8px 0}
+  .skip:focus{right:0}
 
-  /* ===== HERO — סמטת לילה ===== */
-  .hero{position:relative;text-align:center;padding:28px 26px 64px;color:#fff;overflow:hidden;
+  /* ===== HERO ===== */
+  .hero{position:relative;text-align:center;padding:30px 26px 60px;color:#fff;overflow:hidden;
     background:
-      radial-gradient(70% 50% at 50% 78%, rgba(217,154,60,.22), transparent 70%),
-      radial-gradient(95% 65% at 50% 6%, rgba(217,154,60,.30), rgba(20,14,8,0) 60%),
-      linear-gradient(180deg,#1a130b 0%, #0f0b07 55%, #0c0907 100%);
-  }
-  .hero::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+      linear-gradient(180deg, rgba(12,9,7,.55), rgba(12,9,7,.80) 55%, rgba(12,9,7,.96)),
+      radial-gradient(90% 60% at 50% 8%, rgba(217,154,60,.34), rgba(20,14,8,0) 60%),
+      url('img/kotel.jpg') center 30%/cover no-repeat, #100b07;}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
     background:
-      radial-gradient(1.5px 1.5px at 22% 18%, rgba(255,235,200,.5), transparent),
-      radial-gradient(1.3px 1.3px at 68% 12%, rgba(255,235,200,.4), transparent),
-      radial-gradient(1.6px 1.6px at 80% 26%, rgba(255,235,200,.35), transparent),
-      radial-gradient(1.3px 1.3px at 12% 33%, rgba(255,235,200,.4), transparent)}
-  /* קרן אור מנורה */
-  .hero::after{content:"";position:absolute;left:50%;top:-8%;transform:translateX(-50%);
-    width:60%;height:70%;pointer-events:none;
-    background:radial-gradient(50% 60% at 50% 0%, rgba(240,194,119,.22), transparent 70%);filter:blur(6px)}
-
+      radial-gradient(1.5px 1.5px at 22% 16%, rgba(255,235,200,.6), transparent),
+      radial-gradient(1.3px 1.3px at 70% 12%, rgba(255,235,200,.5), transparent),
+      radial-gradient(1.5px 1.5px at 82% 24%, rgba(255,235,200,.4), transparent)}
   .logo-plate{position:relative;display:inline-flex;align-items:center;background:#fff;border-radius:13px;
-    padding:8px 15px;box-shadow:0 6px 22px rgba(0,0,0,.5);margin-bottom:8px}
-  .logo-plate img{height:38px;width:auto;display:block}
-  .logo-kicker{position:relative;display:block;font-size:12px;letter-spacing:.14em;color:var(--sand-dim);margin-top:7px}
-
-  .title{position:relative;font-family:'Suez One',serif;font-weight:400;
-    font-size:clamp(54px,16vw,120px);line-height:.92;color:#fbf3e2;margin-top:14px;
-    text-shadow:0 2px 24px rgba(240,194,119,.45), 0 6px 50px rgba(217,154,60,.3);letter-spacing:.01em}
-  .title .l2{display:block;color:#f3e8d2}
+    padding:8px 15px;box-shadow:0 6px 22px rgba(0,0,0,.55);margin-bottom:8px}
+  .logo-plate img{height:38px;width:auto}
+  .logo-kicker{position:relative;display:block;font-size:12px;letter-spacing:.14em;color:#e8dcc2;margin-top:7px}
+  .title{position:relative;font-family:'Suez One',serif;font-size:clamp(50px,15vw,112px);line-height:.9;
+    color:#fdf5e6;margin-top:14px;text-shadow:0 2px 26px rgba(242,198,126,.5),0 6px 60px rgba(217,154,60,.4)}
+  .title .l2{display:block}
+  .title small{display:block;font-family:'Frank Ruhl Libre',serif;font-weight:500;
+    font-size:clamp(16px,4.4vw,22px);color:var(--amber-light);margin-top:8px;text-shadow:none;letter-spacing:.02em}
   .badge{position:relative;display:inline-block;margin-top:18px;
     background:linear-gradient(90deg,var(--copper),var(--amber),var(--copper));color:#1c120a;
-    font-weight:700;font-size:clamp(15px,3.8vw,18px);padding:9px 24px;border-radius:7px;
-    box-shadow:0 8px 26px rgba(0,0,0,.4)}
-  .invite{position:relative;margin-top:24px;font-size:clamp(15px,3.8vw,18px);color:var(--sand);letter-spacing:.02em}
-  .invite b{color:var(--amber-light);font-weight:700}
+    font-weight:700;font-size:clamp(14px,3.6vw,17px);padding:9px 22px;border-radius:7px;box-shadow:0 8px 26px rgba(0,0,0,.45)}
+  .invite{position:relative;margin-top:22px;font-size:clamp(15px,3.8vw,18px);color:var(--sand)}
+  .invite b{color:var(--amber-light)}
 
-  /* CTA */
   .btn-wa{display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:#fff;text-decoration:none;
-    font-weight:700;font-size:clamp(17px,4.4vw,20px);padding:15px 32px;border-radius:999px;
-    box-shadow:0 10px 30px rgba(37,211,102,.4);transition:transform .15s, box-shadow .15s;margin-top:26px}
-  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(37,211,102,.5)}
-  .btn-wa svg{width:24px;height:24px;fill:#fff;flex:none}
-  .btn-note{display:block;margin-top:11px;font-size:13px;color:var(--sand-dim);position:relative}
+    font-weight:700;font-size:clamp(16px,4.2vw,20px);padding:15px 30px;border-radius:999px;
+    box-shadow:0 10px 30px rgba(37,211,102,.42);transition:transform .15s, box-shadow .15s;margin-top:24px}
+  .btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(37,211,102,.55)}
+  .btn-wa svg{width:23px;height:23px;fill:#fff;flex:none}
+  .btn-note{display:block;margin-top:11px;font-size:13px;color:#d9cba8;position:relative}
 
-  /* ===== sections ===== */
-  section{padding:52px 30px;position:relative}
-  .eyebrow{display:block;text-align:center;color:var(--amber);font-weight:700;letter-spacing:.24em;font-size:13px;margin-bottom:12px}
-  .sec-title{text-align:center;font-weight:900;font-size:clamp(27px,6.6vw,40px);color:#fbf2e0;line-height:1.18}
+  section{padding:50px 30px;position:relative}
+  .eyebrow{display:block;text-align:center;color:var(--amber);font-weight:700;letter-spacing:.22em;font-size:13px;margin-bottom:11px}
+  .sec-title{text-align:center;font-weight:900;font-size:clamp(26px,6.4vw,40px);color:#fdf4e2;line-height:1.18}
   .sec-title em{font-style:normal;color:var(--amber-light)}
-  .rule{width:60px;height:3px;margin:16px auto 0;border-radius:3px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}
-  .dots{text-align:center;color:var(--amber);letter-spacing:.5em;font-size:20px;margin:6px 0}
+  .rule{width:60px;height:3px;margin:15px auto 0;border-radius:3px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}
 
   /* story */
-  .story{background:
-      radial-gradient(80% 60% at 80% 0%, rgba(201,123,58,.16), transparent 60%),
-      linear-gradient(180deg,#0c0907, #140e08)}
-  .story .body{max-width:600px;margin:26px auto 0}
-  .story p{font-size:clamp(17px,4.4vw,21px);color:#e3d7bf;margin-bottom:18px;text-align:center}
-  .story p .hl{color:var(--amber-light);font-weight:700}
+  .story{background:radial-gradient(80% 60% at 80% 0%, rgba(201,123,58,.15), transparent 60%), linear-gradient(180deg,#0c0907,#140e08)}
+  .story .body{max-width:600px;margin:24px auto 0}
+  .story p{font-size:clamp(17px,4.3vw,21px);color:#e6dac2;margin-bottom:16px;text-align:center}
+  .story .hl{color:var(--amber-light);font-weight:700}
   .story .kick{font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:clamp(19px,5vw,24px);color:#fff}
-  .story .close{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--amber-light);
-    font-size:clamp(20px,5.2vw,26px);line-height:1.4}
+  .story .close{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--amber-light);font-size:clamp(20px,5.2vw,26px);line-height:1.4}
 
-  /* what */
-  .what{background:var(--night)}
-  .what .lead{max-width:600px;margin:0 auto;text-align:center}
-  .what .name{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--amber-light);
-    font-size:clamp(20px,5vw,26px);margin-bottom:14px}
-  .what p{color:#ddd0b6;font-size:clamp(16px,4.1vw,19px)}
-  .what .invite-pill{display:inline-block;margin-top:18px;background:rgba(217,154,60,.14);
-    border:1px solid rgba(240,194,119,.35);border-radius:999px;padding:8px 20px;color:var(--amber-light);font-weight:600;font-size:15px}
+  /* intro text */
+  .intro{background:var(--night)}
+  .intro .box{max-width:640px;margin:0 auto;text-align:center}
+  .intro .name{font-family:'Frank Ruhl Libre',serif;font-weight:700;color:var(--amber-light);font-size:clamp(19px,4.8vw,24px);margin-bottom:14px}
+  .intro p{color:#e0d3b9;font-size:clamp(16px,4.1vw,19px)}
+  .intro .kotel-note{display:inline-block;margin-top:18px;background:rgba(217,154,60,.14);border:1px solid rgba(242,198,126,.4);
+    border-radius:999px;padding:9px 22px;color:var(--amber-light);font-weight:600;font-size:15.5px}
+
+  /* tours */
+  .tours{background:linear-gradient(180deg,#140e08,#0d0a07)}
+  .tours-grid{display:grid;gap:22px;max-width:680px;margin:30px auto 0}
+  .tour{background:var(--panel);border:1px solid rgba(217,154,60,.25);border-radius:18px;overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.4)}
+  .tour-img{width:100%;height:200px;object-fit:cover;filter:saturate(1.02)}
+  .tour-body{padding:22px 22px 20px}
+  .tour-num{display:inline-block;background:linear-gradient(90deg,var(--amber-deep),var(--amber));color:#1c120a;
+    font-weight:700;font-size:13px;padding:4px 14px;border-radius:999px;margin-bottom:10px}
+  .tour h3{font-size:clamp(21px,5.2vw,26px);color:#fdf4e2;margin-bottom:8px}
+  .tour p{color:#d3c4a6;font-size:clamp(14.5px,3.7vw,16px);line-height:1.6}
+  .tour-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;align-items:center}
+  .tour-meta .m{display:inline-flex;align-items:center;gap:6px;background:rgba(217,154,60,.12);
+    border:1px solid rgba(242,198,126,.3);border-radius:10px;padding:7px 13px;font-size:14px;font-weight:600;color:#f0e4cb}
+  .tour-meta .price{background:rgba(37,211,102,.12);border-color:rgba(37,211,102,.4);color:#bff5d3}
+  .tour-cta{margin-right:auto;color:var(--amber-light);font-weight:700;text-decoration:none;font-size:14.5px;white-space:nowrap}
+  .tour-cta:hover{text-decoration:underline}
+  .dur-note{max-width:680px;margin:20px auto 0;text-align:center;color:var(--sand-dim);font-size:14.5px}
 
   /* features */
-  .feat{background:linear-gradient(180deg,#140e08,#0d0a07)}
-  .cards{display:grid;gap:14px;max-width:640px;margin:0 auto}
-  .card{background:linear-gradient(135deg,rgba(217,154,60,.10),rgba(28,20,12,.6));
-    border:1px solid rgba(217,154,60,.28);border-radius:16px;padding:20px 20px 20px 60px;position:relative}
-  .card .ic{position:absolute;top:18px;right:18px;width:40px;height:40px;border-radius:11px;
-    background:linear-gradient(135deg,var(--amber-light),var(--amber-deep));display:flex;align-items:center;justify-content:center;font-size:20px}
-  .card h3{font-size:clamp(18px,4.6vw,21px);color:#fbf2e0;margin-bottom:3px;padding-right:54px}
-  .card p{color:var(--sand-dim);font-size:15.5px;padding-right:54px}
+  .feat{background:var(--night)}
+  .cards{display:grid;gap:13px;max-width:640px;margin:28px auto 0}
+  .card{background:linear-gradient(135deg,rgba(217,154,60,.10),rgba(28,20,12,.55));border:1px solid rgba(217,154,60,.26);
+    border-radius:15px;padding:18px 18px 18px 58px;position:relative}
+  .card .ic{position:absolute;top:16px;right:16px;width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(135deg,var(--amber-light),var(--amber-deep));display:flex;align-items:center;justify-content:center;font-size:19px}
+  .card h3{font-size:clamp(17px,4.5vw,20px);color:#fdf4e2;margin-bottom:2px;padding-right:52px}
+  .card p{color:var(--sand-dim);font-size:15px;padding-right:52px}
 
   /* audience */
-  .aud{background:var(--night);text-align:center}
-  .chips{display:flex;flex-wrap:wrap;gap:11px;justify-content:center;max-width:600px;margin:24px auto 0}
-  .chip{background:rgba(217,154,60,.10);border:1px solid rgba(240,194,119,.32);border-radius:999px;
-    padding:10px 22px;font-weight:600;color:#f0e6d0;font-size:15.5px}
-  .yearround{max-width:600px;margin:30px auto 0;background:rgba(201,123,58,.12);
-    border-right:4px solid var(--amber);border-radius:12px;padding:18px 22px;text-align:right}
+  .aud{background:linear-gradient(180deg,#0d0a07,#140e08);text-align:center}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:600px;margin:22px auto 0}
+  .chip{background:rgba(217,154,60,.10);border:1px solid rgba(242,198,126,.3);border-radius:999px;padding:9px 20px;font-weight:600;color:#f0e6d0;font-size:15px}
+  .yearround{max-width:600px;margin:28px auto 0;background:rgba(201,123,58,.12);border-right:4px solid var(--amber);
+    border-radius:12px;padding:17px 20px;text-align:right;color:#e0d3b9}
   .yearround b{color:var(--amber-light)}
 
   /* proof */
-  .proof{background:linear-gradient(180deg,#0d0a07,#140e08);text-align:center}
+  .proof{background:var(--night);text-align:center}
   .proof .chips .chip{background:#fff;color:#1c140a;border:none}
   .proof .chips .chip span{color:var(--amber-deep)}
-  .gefen{margin-top:22px;color:var(--sand-dim);font-size:14.5px}
+  .gefen{margin-top:20px;color:var(--sand-dim);font-size:14.5px}
   .gefen b{color:var(--amber-light)}
 
   /* final */
   .final{text-align:center;background:
-      radial-gradient(70% 60% at 50% 0%, rgba(217,154,60,.26), transparent 65%),
-      linear-gradient(180deg,#1a130b,#0c0907)}
-  .final h2{font-size:clamp(28px,7vw,42px);color:#fff;margin-bottom:8px}
+      linear-gradient(180deg, rgba(12,9,7,.72), rgba(12,9,7,.9)),
+      radial-gradient(70% 60% at 50% 0%, rgba(217,154,60,.3), transparent 65%),
+      url('img/oldcity.jpg') center/cover no-repeat, #120c07}
+  .final h2{font-size:clamp(27px,6.8vw,42px);color:#fff;margin-bottom:8px}
   .final h2 em{font-style:normal;color:var(--amber-light)}
   .final p{color:var(--sand);max-width:520px;margin:0 auto;font-size:clamp(16px,4vw,18px)}
   .phone{margin-top:22px;font-family:'Frank Ruhl Libre',serif;font-weight:700;font-size:clamp(20px,5vw,26px);color:#fff}
   .phone b{color:var(--amber-light);direction:ltr;unicode-bidi:embed}
-  .final .small{margin-top:10px;font-size:13.5px;color:var(--sand-dim)}
+  .final .small{margin-top:10px;font-size:13.5px;color:#d9cba8}
 
-  footer{background:#0a0705;color:#8c7d63;text-align:center;padding:24px;font-size:13px;letter-spacing:.04em}
+  footer{background:#0a0705;color:#9a8b70;text-align:center;padding:24px;font-size:13px}
   footer .fbrand{font-family:'Suez One',serif;color:var(--amber-light);font-size:20px}
 
   .float{position:fixed;bottom:18px;left:18px;z-index:50}
@@ -148,29 +150,26 @@
 </style>
 </head>
 <body>
+<a href="#tours" class="skip">דלג לתוכן — 4 המסלולים</a>
 <div class="wrap">
 
   <!-- ===================== HERO ===================== -->
   <header class="hero">
-    <div class="logo-plate"><img src="logo-panim.png" alt="פנים אל פנים"></div>
+    <div class="logo-plate"><img src="logo-panim.png" alt="לוגו פנים אל פנים"></div>
     <span class="logo-kicker">מבית פנים אל פנים</span>
-
-    <h1 class="title">סיורי<span class="l2">סליחות</span></h1>
-    <div class="badge">מבית ירושמימה · בראשות הרב גדי שלוין</div>
-
+    <h1 class="title">סיורי<span class="l2">סליחות</span><small>מבית ירושמימה · בראשות הרב גדי שלוין</small></h1>
     <p class="invite">הזמנה ל<b>ישיבות · אולפנות · תנועות נוער · צוותים</b><br>לחוות את ירושלים כמו שלא חוויתם.</p>
-
-    <a class="btn-wa wa-link" href="#">
-      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
+    <a class="btn-wa wa-link" href="#" aria-label="לתיאום סיור בוואטסאפ עם ציון">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
       לתיאום סיור לקבוצה שלכם
     </a>
     <span class="btn-note">שיחה אישית בוואטסאפ עם ציון · ללא התחייבות</span>
   </header>
 
   <!-- ===================== STORY ===================== -->
-  <section class="story">
+  <section class="story" aria-labelledby="story-h">
     <span class="eyebrow">תארו לעצמכם</span>
-    <h2 class="sec-title">חצות, בסמטאות העיר העתיקה</h2>
+    <h2 class="sec-title" id="story-h">חצות, בסמטאות העיר העתיקה</h2>
     <div class="rule"></div>
     <div class="body">
       <p>השעה מאוחרת. האבנים עוד חמות מחום היום, והסמטאות שקטות. קבוצה צועדת לאט בין החנויות הסגורות — ואור פנס בודד נופל על אבן בת אלפיים שנה.</p>
@@ -180,71 +179,111 @@
     </div>
   </section>
 
-  <!-- ===================== WHAT ===================== -->
-  <section class="what">
-    <div class="lead">
-      <div class="name">ירושמימה — מדרשה לסיורים אמוניים בירושלים</div>
-      <p>אנחנו, מבית פנים אל פנים, מזמינים אתכם למסע בסמטאות ירושלים — בין קודש לחול, בין ירושלים של מטה לזו של מעלה. נפתח את הלב, ניגע בתוכן רוחני משמעותי, ונגיע אל ימי הרחמים והסליחות מתוך חיבור אמיתי.</p>
-      <span class="invite-pill">סיורי סליחות · מבט אמוני ותורני עמוק</span>
+  <!-- ===================== INTRO TEXT ===================== -->
+  <section class="intro" aria-labelledby="intro-h">
+    <div class="box">
+      <div class="name" id="intro-h">ירושמימה — מדרשה לסיורים אמוניים בירושלים</div>
+      <p>ירושמימה, מבית פנים אל פנים, מזמינה אתכם לסיורי הכנה לסליחות המועברים ע״י תלמידי חכמים — שמפגישים את האנשים עם האבנים והתקופות שעברו בירושלים, בחיבור למסרים עמוקים, בצורה המחברת אל הלב.</p>
+      <span class="kotel-note">🕯️ ניתן לסיים את הסיור באמירת סליחות בכותל</span>
     </div>
   </section>
 
-  <!-- ===================== FEATURES ===================== -->
-  <section class="feat">
-    <span class="eyebrow">חינוך מתוך חיבור</span>
-    <h2 class="sec-title">למה <em>איתנו</em> זה אחרת</h2>
+  <!-- ===================== TOURS ===================== -->
+  <section class="tours" id="tours" aria-labelledby="tours-h">
+    <span class="eyebrow">🌟 אז מה יש לנו להציע</span>
+    <h2 class="sec-title" id="tours-h">4 <em>מסלולים</em></h2>
     <div class="rule"></div>
-    <div class="cards" style="margin-top:28px">
-      <div class="card">
-        <div class="ic">📖</div>
-        <h3>מדריכים תלמידי חכמים</h3>
-        <p>עומק תורני אמיתי — לא עוד סיור, אלא מסע עם אנשים שחיים את התוכן.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🎯</div>
-        <h3>הדרכה מותאמת</h3>
-        <p>לעולם המושגים של עולם התורה והחינוך הדתי — מדברים בשפה שלכם.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🌙</div>
-        <h3>בכל שעות היממה</h3>
-        <p>סיור סליחות גם בלב הלילה, כשירושלים שקטה והלב פתוח.</p>
-      </div>
-      <div class="card">
-        <div class="ic">🏠</div>
-        <h3>אופציה לאירוח ושיח</h3>
-        <p>אפשר להמשיך את החוויה באירוח בבתים ובשיחה שנוגעת.</p>
-      </div>
-      <div class="card">
-        <div class="ic">✨</div>
-        <h3>חוויה שנשארת</h3>
-        <p>חוויה רוחנית ואמונית שממשיכה ללוות הרבה אחרי שהסיור נגמר.</p>
-      </div>
+    <div class="tours-grid">
+
+      <article class="tour">
+        <img class="tour-img" src="img/mishkenot.jpg" alt="שכונת משכנות שאננים וטחנת הרוח מול חומות העיר העתיקה" loading="lazy" width="800" height="200">
+        <div class="tour-body">
+          <span class="tour-num">מסלול 1</span>
+          <h3>יציאה מעצמי בדרך לירושלים</h3>
+          <p>ממשכנות שאננים לכותל — דרך הסיפור של היציאה מהחומות ומסירות הנפש, במבט של גאולת ירושלים. עלייה דרך מנהרת הר ציון ופגישה עם שמותיה של ירושלים, הרובע והכותל.</p>
+          <div class="tour-meta">
+            <span class="m">⏱️ שעה וחצי–שעתיים</span>
+            <span class="m price">1,800 ₪</span>
+            <a class="tour-cta wa-link" href="#">לתיאום ←</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <img class="tour-img" src="img/david.jpg" alt="ציון קבר דוד המלך מכוסה במעיל קטיפה כחול עם רקמת זהב" loading="lazy" width="800" height="200">
+        <div class="tour-body">
+          <span class="tour-num">מסלול 2</span>
+          <h3>דוד מלך ישראל</h3>
+          <p>קבר דוד, ופגישה עם דמותו של דוד המלך — מלכות וגאולה, עוז וענווה. הר ציון, היחס בין ציון וירושלים, הרובע והכותל.</p>
+          <div class="tour-meta">
+            <span class="m">⏱️ שעה וחצי–שעתיים</span>
+            <span class="m price">1,500 ₪</span>
+            <a class="tour-cta wa-link" href="#">לתיאום ←</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <img class="tour-img" src="img/hurva.jpg" alt="בית הכנסת החורבה ברובע היהודי בעיר העתיקה" loading="lazy" width="800" height="200">
+        <div class="tour-body">
+          <span class="tour-num">מסלול 3</span>
+          <h3>סיור ברובע</h3>
+          <p>שעושה את כל ישראל חברים — עיר התורה והחסד. משער ציון, שחרור העיר, כיכר בתי מחסה, החסד של הישוב בירושלים, ישיבת המקובלים (תורת הסוד והבאת הגאולה), וישיבת הכותל.</p>
+          <div class="tour-meta">
+            <span class="m">⏱️ שעה וחצי–שעתיים</span>
+            <span class="m price">1,500 ₪</span>
+            <a class="tour-cta wa-link" href="#">לתיאום ←</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <img class="tour-img" src="img/olives.jpg" alt="הר הזיתים ובית הקברות העתיק בשעת בין הערביים מול ירושלים" loading="lazy" width="800" height="200">
+        <div class="tour-body">
+          <span class="tour-num">מסלול 4</span>
+          <h3>הר הזיתים</h3>
+          <p>הר תחיית המתים, תצפית ההר, ומעבר בין קברי גדולי הדורות בירושלים — כתשקיף לסוד הפנימי של הכיסופים לעיר. קבר זכריה, סיפור החורבן והבניין, אור החיים הקדוש, הרש״ש וסיפור הכיסופים לירושלים ולגאולה. אופציה לסיים בביקור בכותל.</p>
+          <div class="tour-meta">
+            <span class="m">⏱️ שעתיים וחצי</span>
+            <span class="m price">2,200 ₪</span>
+            <a class="tour-cta wa-link" href="#">לתיאום ←</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <p class="dur-note">משך 3 המסלולים הראשונים: שעה וחצי–שעתיים · משך מסלול הר הזיתים: שעתיים וחצי</p>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="feat" aria-labelledby="feat-h">
+    <span class="eyebrow">חינוך מתוך חיבור</span>
+    <h2 class="sec-title" id="feat-h">למה <em>איתנו</em> זה אחרת</h2>
+    <div class="rule"></div>
+    <div class="cards">
+      <div class="card"><div class="ic" aria-hidden="true">📖</div><h3>מדריכים תלמידי חכמים</h3><p>עומק תורני אמיתי — לא עוד סיור, אלא מסע עם אנשים שחיים את התוכן.</p></div>
+      <div class="card"><div class="ic" aria-hidden="true">🎯</div><h3>הדרכה מותאמת</h3><p>לעולם המושגים של עולם התורה והחינוך הדתי — מדברים בשפה שלכם.</p></div>
+      <div class="card"><div class="ic" aria-hidden="true">🌙</div><h3>בכל שעות היממה</h3><p>סיור גם בלב הלילה, כשירושלים שקטה והלב פתוח.</p></div>
+      <div class="card"><div class="ic" aria-hidden="true">🏠</div><h3>אופציה לאירוח ושיח</h3><p>אפשר להמשיך את החוויה באירוח בבתים ובשיחה שנוגעת.</p></div>
     </div>
   </section>
 
   <!-- ===================== AUDIENCE ===================== -->
-  <section class="aud">
+  <section class="aud" aria-labelledby="aud-h">
     <span class="eyebrow">מתאים במיוחד ל</span>
-    <h2 class="sec-title">קבוצות שרוצות יותר מסיור</h2>
+    <h2 class="sec-title" id="aud-h">קבוצות שרוצות יותר מסיור</h2>
     <div class="rule"></div>
     <div class="chips">
-      <span class="chip">ישיבות</span>
-      <span class="chip">אולפנות</span>
-      <span class="chip">תנועות נוער</span>
-      <span class="chip">צוותים</span>
-      <span class="chip">סמינרים</span>
-      <span class="chip">מדרשות</span>
+      <span class="chip">ישיבות</span><span class="chip">אולפנות</span><span class="chip">תנועות נוער</span>
+      <span class="chip">צוותים</span><span class="chip">סמינרים</span><span class="chip">מדרשות</span>
     </div>
-    <div class="yearround">
-      <b>ולא רק בסליחות.</b> ירושמימה מובילה סיורי זהות וחיבור עמוק לירושלים לאורך כל השנה — בכל מועד ולכל קבוצה.
-    </div>
+    <div class="yearround"><b>ולא רק בסליחות.</b> ירושמימה מובילה סיורי זהות וחיבור עמוק לירושלים לאורך כל השנה — בכל מועד ולכל קבוצה.</div>
   </section>
 
   <!-- ===================== PROOF ===================== -->
-  <section class="proof">
+  <section class="proof" aria-labelledby="proof-h">
     <span class="eyebrow">כבר בשטח</span>
-    <h2 class="sec-title">מדריכים בלב הקודש</h2>
+    <h2 class="sec-title" id="proof-h">מדריכים בלב הקודש</h2>
     <div class="rule"></div>
     <div class="chips">
       <span class="chip">🕍 <span>הכותל המערבי</span></span>
@@ -254,12 +293,12 @@
     <p class="gefen">הסיורים <b>מוכרים בתכנית הגפן</b> · קוד 48281 (אדמה ושמים)</p>
   </section>
 
-  <!-- ===================== FINAL CTA ===================== -->
-  <section class="final">
-    <h2>משריינים מקום <em>עכשיו.</em></h2>
-    <p>בחרו תאריך, ותנו לקבוצה שלכם חוויה שלא ישכחו — בין סמטאות ירושלים אל לב הסליחות.</p>
-    <a class="btn-wa wa-link" href="#" style="margin-top:24px">
-      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
+  <!-- ===================== FINAL ===================== -->
+  <section class="final" aria-labelledby="final-h">
+    <h2 id="final-h">משריינים מקום <em>עכשיו.</em></h2>
+    <p>בחרו מסלול ותאריך, ותנו לקבוצה שלכם חוויה שלא ישכחו — בין סמטאות ירושלים אל לב הסליחות.</p>
+    <a class="btn-wa wa-link" href="#" style="margin-top:24px" aria-label="שליחת הודעה לציון בוואטסאפ">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
       שלחו הודעה לציון
     </a>
     <div class="phone">לתיאום סיור · ציון <b>055-663-9240</b></div>
@@ -273,8 +312,8 @@
 </div>
 
 <div class="float">
-  <a class="wa-link" href="#">
-    <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
+  <a class="wa-link" href="#" aria-label="דברו עם ציון בוואטסאפ">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.25.69-1.45 1.32-1.99 1.36-.53.05-1.02.24-3.44-.72-2.9-1.14-4.74-4.1-4.88-4.29-.14-.19-1.17-1.56-1.17-2.97s.74-2.11 1-2.4c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.25.6.84 2.07.91 2.22.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.64-.15.26.1 1.66.78 1.94.93.29.14.48.21.55.33.07.12.07.71-.18 1.4Z"/></svg>
     <span>דברו עם ציון</span>
   </a>
 </div>
